@@ -82,7 +82,7 @@ const Logo = styled.div`
   }
 `;
 const NavButton1 = styled.div`
-  height: 135px;
+  height: 35px;
   flex: 1;
   margin: 0px 15px;
   display: flex;
