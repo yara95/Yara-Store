@@ -22,12 +22,12 @@ function Navbar() {
         <Logo onClick={() => navigate("/")}>
           <img src="./yara_logo1.png" alt="" />
         </Logo>
-        <SearchBar>
-          <input type="text" placeholder="Search..." />
+        <NavButton1>
+          
           <SearchIcon onClick={() => navigate("/addproduct")}>
             <img src="./searchIcon.png" alt="" />
           </SearchIcon>
-        </SearchBar>
+        </NavButton1>
         <RightContainer>
           <NavButton
             onClick={user ? () => signOut() : () => navigate("/login")}
@@ -45,12 +45,7 @@ function Navbar() {
           </BasketButton>
         </RightContainer>
       </Inner>
-      <MobileSearchbar>
-        <input type="text" placeholder="Search..." />
-        <SearchIcon onClick={() => navigate("/addproduct")}>
-          <img src="./searchIcon.png" alt="" />
-        </SearchIcon>
-      </MobileSearchbar>
+      
     </Container>
   );
 }
@@ -86,8 +81,8 @@ const Logo = styled.div`
     margin-top: 10px;
   }
 `;
-const SearchBar = styled.div`
-  height: 35px;
+const NavButton1 = styled.div`
+  height: 135px;
   flex: 1;
   margin: 0px 15px;
   display: flex;
@@ -137,7 +132,7 @@ const MobileSearchbar = styled.div`
 const SearchIcon = styled.div`
   background-color: #F69A34;
   height: 100%;
-  width: 40px;
+  width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +157,7 @@ const NavButton = styled.div`
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: Right  ;
   cursor: pointer;
   margin-right: 15px;
 

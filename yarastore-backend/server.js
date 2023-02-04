@@ -99,7 +99,7 @@ app.post("/auth/login", async (req, res) => {
       res.send({ error: "invaild Password" });
     }
   } else {
-    res.send({ error: "user is not exist" });
+    res.send({ error: "user does not exist" });
   }
 });
 
